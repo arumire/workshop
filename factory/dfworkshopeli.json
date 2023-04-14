@@ -1,0 +1,9 @@
+{
+	"name": "dfworkshopeli",
+	"properties": {
+		"globalConfigurations": {
+			"PipelineBillingEnabled": "true"
+		}
+	},
+	"location": "eastus"
+}
