@@ -13,7 +13,16 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": [],
+				"userProperties": [
+					{
+						"name": "Source",
+						"value": "sales.customers"
+					},
+					{
+						"name": "Destination",
+						"value": "data-container//"
+					}
+				],
 				"typeProperties": {
 					"source": {
 						"type": "AzureSqlSource",
