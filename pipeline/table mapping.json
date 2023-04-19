@@ -77,7 +77,17 @@
 				"outputs": [
 					{
 						"referenceName": "Parquet1",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"filename": {
+								"value": "@pipeline().parameters.filename",
+								"type": "Expression"
+							},
+							"path": {
+								"value": "@pipeline().parameters.path",
+								"type": "Expression"
+							}
+						}
 					}
 				]
 			}
