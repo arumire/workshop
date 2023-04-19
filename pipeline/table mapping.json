@@ -128,16 +128,20 @@
 		],
 		"parameters": {
 			"table": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "brands"
 			},
 			"schema": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "production"
 			},
 			"path": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "dev"
 			},
 			"filename": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "production-brands.parquets"
 			}
 		},
 		"annotations": []
