@@ -21,7 +21,10 @@
 				"value": "@dataset().schema",
 				"type": "Expression"
 			},
-			"table": "customers"
+			"table": {
+				"value": "@dataset().table",
+				"type": "Expression"
+			}
 		}
 	}
 }
