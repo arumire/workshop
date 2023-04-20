@@ -66,86 +66,66 @@
 							},
 							{
 								"source": {
-									"name": "customer_id",
+									"name": "item_id",
 									"type": "Int32",
 									"physicalType": "int"
 								},
 								"sink": {
-									"name": "customer_id",
+									"name": "item_id",
 									"type": "Int32",
 									"physicalType": "INT_32"
 								}
 							},
 							{
 								"source": {
-									"name": "order_status",
-									"type": "Byte",
-									"physicalType": "tinyint"
-								},
-								"sink": {
-									"name": "order_status",
-									"type": "Byte",
-									"physicalType": "INT_32"
-								}
-							},
-							{
-								"source": {
-									"name": "order_date",
-									"type": "DateTime",
-									"physicalType": "date"
-								},
-								"sink": {
-									"name": "order_date",
-									"type": "DateTime",
-									"physicalType": "INT_96"
-								}
-							},
-							{
-								"source": {
-									"name": "required_date",
-									"type": "DateTime",
-									"physicalType": "date"
-								},
-								"sink": {
-									"name": "required_date",
-									"type": "DateTime",
-									"physicalType": "INT_96"
-								}
-							},
-							{
-								"source": {
-									"name": "shipped_date",
-									"type": "DateTime",
-									"physicalType": "date"
-								},
-								"sink": {
-									"name": "shipped_date",
-									"type": "DateTime",
-									"physicalType": "INT_96"
-								}
-							},
-							{
-								"source": {
-									"name": "store_id",
+									"name": "product_id",
 									"type": "Int32",
 									"physicalType": "int"
 								},
 								"sink": {
-									"name": "store_id",
+									"name": "product_id",
 									"type": "Int32",
 									"physicalType": "INT_32"
 								}
 							},
 							{
 								"source": {
-									"name": "staff_id",
+									"name": "quantity",
 									"type": "Int32",
 									"physicalType": "int"
 								},
 								"sink": {
-									"name": "staff_id",
+									"name": "quantity",
 									"type": "Int32",
 									"physicalType": "INT_32"
+								}
+							},
+							{
+								"source": {
+									"name": "list_price",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 2,
+									"precision": 10
+								},
+								"sink": {
+									"name": "list_price",
+									"type": "Decimal",
+									"physicalType": "DECIMAL"
+								}
+							},
+							{
+								"source": {
+									"name": "discount",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 2,
+									"precision": 4
+								},
+								"sink": {
+									"name": "discount",
+									"type": "Decimal",
+									"physicalType": "DECIMAL"
 								}
 							},
 							{
@@ -213,11 +193,11 @@
 		"parameters": {
 			"table": {
 				"type": "string",
-				"defaultValue": "order_items"
+				"defaultValue": "stocks"
 			},
 			"schema": {
 				"type": "string",
-				"defaultValue": "sales"
+				"defaultValue": "production"
 			},
 			"path": {
 				"type": "string",
@@ -225,7 +205,7 @@
 			},
 			"filename": {
 				"type": "string",
-				"defaultValue": "sales-order_items.parquets"
+				"defaultValue": "sales-stocks.parquets"
 			}
 		},
 		"annotations": []
