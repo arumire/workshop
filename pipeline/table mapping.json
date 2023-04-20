@@ -129,7 +129,7 @@
 		"parameters": {
 			"table": {
 				"type": "string",
-				"defaultValue": "brands"
+				"defaultValue": "categories"
 			},
 			"schema": {
 				"type": "string",
@@ -141,7 +141,7 @@
 			},
 			"filename": {
 				"type": "string",
-				"defaultValue": "production-brands.parquets"
+				"defaultValue": "production-categories.parquets"
 			}
 		},
 		"annotations": []
