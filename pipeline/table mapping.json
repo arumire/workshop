@@ -54,24 +54,12 @@
 						"mappings": [
 							{
 								"source": {
-									"name": "order_id",
+									"name": "store_id",
 									"type": "Int32",
 									"physicalType": "int"
 								},
 								"sink": {
-									"name": "order_id",
-									"type": "Int32",
-									"physicalType": "INT_32"
-								}
-							},
-							{
-								"source": {
-									"name": "item_id",
-									"type": "Int32",
-									"physicalType": "int"
-								},
-								"sink": {
-									"name": "item_id",
+									"name": "store_id",
 									"type": "Int32",
 									"physicalType": "INT_32"
 								}
@@ -98,46 +86,6 @@
 									"name": "quantity",
 									"type": "Int32",
 									"physicalType": "INT_32"
-								}
-							},
-							{
-								"source": {
-									"name": "list_price",
-									"type": "Decimal",
-									"physicalType": "decimal",
-									"scale": 2,
-									"precision": 10
-								},
-								"sink": {
-									"name": "list_price",
-									"type": "Decimal",
-									"physicalType": "DECIMAL"
-								}
-							},
-							{
-								"source": {
-									"name": "discount",
-									"type": "Decimal",
-									"physicalType": "decimal",
-									"scale": 2,
-									"precision": 4
-								},
-								"sink": {
-									"name": "discount",
-									"type": "Decimal",
-									"physicalType": "DECIMAL"
-								}
-							},
-							{
-								"source": {
-									"name": "update_date",
-									"type": "DateTime",
-									"physicalType": "datetime"
-								},
-								"sink": {
-									"name": "update_date",
-									"type": "DateTime",
-									"physicalType": "INT_96"
 								}
 							},
 							{
