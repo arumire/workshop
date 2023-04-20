@@ -54,24 +54,24 @@
 						"mappings": [
 							{
 								"source": {
-									"name": "brand_id",
+									"name": "category_id",
 									"type": "Int32",
 									"physicalType": "int"
 								},
 								"sink": {
-									"name": "brand_id",
+									"name": "category_id",
 									"type": "Int32",
 									"physicalType": "INT_32"
 								}
 							},
 							{
 								"source": {
-									"name": "brand_name",
+									"name": "category_name",
 									"type": "String",
 									"physicalType": "varchar"
 								},
 								"sink": {
-									"name": "brand_name",
+									"name": "category_name",
 									"type": "String",
 									"physicalType": "UTF8"
 								}
