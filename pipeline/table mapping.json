@@ -179,11 +179,11 @@
 		"parameters": {
 			"table": {
 				"type": "string",
-				"defaultValue": "products"
+				"defaultValue": "customers"
 			},
 			"schema": {
 				"type": "string",
-				"defaultValue": "production"
+				"defaultValue": "sales"
 			},
 			"path": {
 				"type": "string",
@@ -191,7 +191,7 @@
 			},
 			"filename": {
 				"type": "string",
-				"defaultValue": "production-products.parquets"
+				"defaultValue": "sales-customers.parquets"
 			}
 		},
 		"annotations": []
