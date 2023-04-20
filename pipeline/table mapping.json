@@ -201,7 +201,7 @@
 		"parameters": {
 			"table": {
 				"type": "string",
-				"defaultValue": "stores"
+				"defaultValue": "staffs"
 			},
 			"schema": {
 				"type": "string",
@@ -213,7 +213,7 @@
 			},
 			"filename": {
 				"type": "string",
-				"defaultValue": "sales-stores.parquets"
+				"defaultValue": "sales-staffs.parquets"
 			}
 		},
 		"annotations": []
