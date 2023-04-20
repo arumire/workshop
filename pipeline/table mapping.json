@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy data2",
+				"name": "Mapping",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -54,26 +54,38 @@
 						"mappings": [
 							{
 								"source": {
-									"name": "brand_id",
+									"name": "store_id",
 									"type": "Int32",
 									"physicalType": "int"
 								},
 								"sink": {
-									"name": "brand_id",
+									"name": "store_id",
 									"type": "Int32",
 									"physicalType": "INT_32"
 								}
 							},
 							{
 								"source": {
-									"name": "brand_name",
-									"type": "String",
-									"physicalType": "varchar"
+									"name": "product_id",
+									"type": "Int32",
+									"physicalType": "int"
 								},
 								"sink": {
-									"name": "brand_name",
-									"type": "String",
-									"physicalType": "UTF8"
+									"name": "product_id",
+									"type": "Int32",
+									"physicalType": "INT_32"
+								}
+							},
+							{
+								"source": {
+									"name": "quantity",
+									"type": "Int32",
+									"physicalType": "int"
+								},
+								"sink": {
+									"name": "quantity",
+									"type": "Int32",
+									"physicalType": "INT_32"
 								}
 							},
 							{
