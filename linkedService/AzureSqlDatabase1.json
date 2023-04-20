@@ -1,6 +1,11 @@
 {
 	"name": "AzureSqlDatabase1",
 	"properties": {
+		"parameters": {
+			"secret": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "AzureSqlDatabase",
 		"typeProperties": {
@@ -10,7 +15,10 @@
 					"referenceName": "AzureKeyVault1",
 					"type": "LinkedServiceReference"
 				},
-				"secretName": "conn-sqldb"
+				"secretName": {
+					"value": "@linkedService().secret",
+					"type": "Expression"
+				}
 			}
 		}
 	}
