@@ -128,6 +128,10 @@
 							"path": {
 								"value": "@pipeline().parameters.path",
 								"type": "Expression"
+							},
+							"filename": {
+								"value": "@pipeline().parameters.filename",
+								"type": "Expression"
 							}
 						}
 					}
