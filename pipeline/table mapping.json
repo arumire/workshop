@@ -20,7 +20,7 @@
 					},
 					{
 						"name": "Destination",
-						"value": "data-container/@{'<path>'}/@{'<filename>'}"
+						"value": "data-container/@{pipeline().parameters.path}/@{pipeline().parameters.filename}"
 					}
 				],
 				"typeProperties": {
@@ -51,52 +51,6 @@
 					"validateDataConsistency": true,
 					"translator": {
 						"type": "TabularTranslator",
-						"mappings": [
-							{
-								"source": {
-									"name": "store_id",
-									"type": "Int32",
-									"physicalType": "int"
-								},
-								"sink": {
-									"name": "store_id",
-									"type": "Int32",
-									"physicalType": "INT_32"
-								}
-							},
-							{
-								"source": {
-									"name": "product_id",
-									"type": "Int32",
-									"physicalType": "int"
-								},
-								"sink": {
-									"name": "product_id",
-									"type": "Int32",
-									"physicalType": "INT_32"
-								}
-							},
-							{
-								"source": {
-									"name": "quantity",
-									"type": "Int32",
-									"physicalType": "int"
-								},
-								"sink": {
-									"name": "quantity",
-									"type": "Int32",
-									"physicalType": "INT_32"
-								}
-							},
-							{
-								"source": {
-									"name": "ProcessDate"
-								},
-								"sink": {
-									"name": "ProcessDate"
-								}
-							}
-						],
 						"typeConversion": true,
 						"typeConversionSettings": {
 							"allowDataTruncation": true,
