@@ -213,7 +213,7 @@
 		"parameters": {
 			"table": {
 				"type": "string",
-				"defaultValue": "customers"
+				"defaultValue": "stores"
 			},
 			"schema": {
 				"type": "string",
@@ -225,7 +225,7 @@
 			},
 			"filename": {
 				"type": "string",
-				"defaultValue": "sales-customers.parquets"
+				"defaultValue": "sales-stores.parquets"
 			}
 		},
 		"annotations": []
