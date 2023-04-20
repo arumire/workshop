@@ -54,36 +54,24 @@
 						"mappings": [
 							{
 								"source": {
-									"name": "customer_id",
+									"name": "store_id",
 									"type": "Int32",
 									"physicalType": "int"
 								},
 								"sink": {
-									"name": "customer_id",
+									"name": "store_id",
 									"type": "Int32",
 									"physicalType": "INT_32"
 								}
 							},
 							{
 								"source": {
-									"name": "first_name",
+									"name": "store_name",
 									"type": "String",
 									"physicalType": "varchar"
 								},
 								"sink": {
-									"name": "first_name",
-									"type": "String",
-									"physicalType": "UTF8"
-								}
-							},
-							{
-								"source": {
-									"name": "last_name",
-									"type": "String",
-									"physicalType": "varchar"
-								},
-								"sink": {
-									"name": "last_name",
+									"name": "store_name",
 									"type": "String",
 									"physicalType": "UTF8"
 								}
