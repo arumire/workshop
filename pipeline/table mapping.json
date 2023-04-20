@@ -54,78 +54,78 @@
 						"mappings": [
 							{
 								"source": {
-									"name": "staff_id",
+									"name": "order_id",
 									"type": "Int32",
 									"physicalType": "int"
 								},
 								"sink": {
-									"name": "staff_id",
+									"name": "order_id",
 									"type": "Int32",
 									"physicalType": "INT_32"
 								}
 							},
 							{
 								"source": {
-									"name": "first_name",
-									"type": "String",
-									"physicalType": "varchar"
+									"name": "customer_id",
+									"type": "Int32",
+									"physicalType": "int"
 								},
 								"sink": {
-									"name": "first_name",
-									"type": "String",
-									"physicalType": "UTF8"
+									"name": "customer_id",
+									"type": "Int32",
+									"physicalType": "INT_32"
 								}
 							},
 							{
 								"source": {
-									"name": "last_name",
-									"type": "String",
-									"physicalType": "varchar"
-								},
-								"sink": {
-									"name": "last_name",
-									"type": "String",
-									"physicalType": "UTF8"
-								}
-							},
-							{
-								"source": {
-									"name": "email",
-									"type": "String",
-									"physicalType": "varchar"
-								},
-								"sink": {
-									"name": "email",
-									"type": "String",
-									"physicalType": "UTF8"
-								}
-							},
-							{
-								"source": {
-									"name": "phone",
-									"type": "String",
-									"physicalType": "varchar"
-								},
-								"sink": {
-									"name": "phone",
-									"type": "String",
-									"physicalType": "UTF8"
-								}
-							},
-							{
-								"source": {
-									"name": "active",
+									"name": "order_status",
 									"type": "Byte",
 									"physicalType": "tinyint"
 								},
 								"sink": {
-									"name": "active",
+									"name": "order_status",
 									"type": "Byte",
 									"physicalType": "INT_32"
 								}
 							},
 							{
 								"source": {
+									"name": "order_date",
+									"type": "DateTime",
+									"physicalType": "date"
+								},
+								"sink": {
+									"name": "order_date",
+									"type": "DateTime",
+									"physicalType": "INT_96"
+								}
+							},
+							{
+								"source": {
+									"name": "required_date",
+									"type": "DateTime",
+									"physicalType": "date"
+								},
+								"sink": {
+									"name": "required_date",
+									"type": "DateTime",
+									"physicalType": "INT_96"
+								}
+							},
+							{
+								"source": {
+									"name": "shipped_date",
+									"type": "DateTime",
+									"physicalType": "date"
+								},
+								"sink": {
+									"name": "shipped_date",
+									"type": "DateTime",
+									"physicalType": "INT_96"
+								}
+							},
+							{
+								"source": {
 									"name": "store_id",
 									"type": "Int32",
 									"physicalType": "int"
@@ -138,14 +138,26 @@
 							},
 							{
 								"source": {
-									"name": "manager_id",
+									"name": "staff_id",
 									"type": "Int32",
 									"physicalType": "int"
 								},
 								"sink": {
-									"name": "manager_id",
+									"name": "staff_id",
 									"type": "Int32",
 									"physicalType": "INT_32"
+								}
+							},
+							{
+								"source": {
+									"name": "update_date",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								},
+								"sink": {
+									"name": "update_date",
+									"type": "DateTime",
+									"physicalType": "INT_96"
 								}
 							},
 							{
@@ -201,7 +213,7 @@
 		"parameters": {
 			"table": {
 				"type": "string",
-				"defaultValue": "orders"
+				"defaultValue": "order_items"
 			},
 			"schema": {
 				"type": "string",
@@ -213,7 +225,7 @@
 			},
 			"filename": {
 				"type": "string",
-				"defaultValue": "sales-orders.parquets"
+				"defaultValue": "sales-order_items.parquets"
 			}
 		},
 		"annotations": []
