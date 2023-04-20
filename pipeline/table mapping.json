@@ -153,7 +153,7 @@
 			},
 			"filename": {
 				"type": "string",
-				"defaultValue": "sales-stocks.parquets"
+				"defaultValue": "production-stocks.parquets"
 			}
 		},
 		"annotations": []
