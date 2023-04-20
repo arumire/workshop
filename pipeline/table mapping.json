@@ -129,7 +129,7 @@
 		"parameters": {
 			"table": {
 				"type": "string",
-				"defaultValue": "categories"
+				"defaultValue": "products"
 			},
 			"schema": {
 				"type": "string",
@@ -141,7 +141,7 @@
 			},
 			"filename": {
 				"type": "string",
-				"defaultValue": "production-categories.parquets"
+				"defaultValue": "production-products.parquets"
 			}
 		},
 		"annotations": []
