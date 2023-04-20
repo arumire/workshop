@@ -54,6 +54,78 @@
 						"mappings": [
 							{
 								"source": {
+									"name": "staff_id",
+									"type": "Int32",
+									"physicalType": "int"
+								},
+								"sink": {
+									"name": "staff_id",
+									"type": "Int32",
+									"physicalType": "INT_32"
+								}
+							},
+							{
+								"source": {
+									"name": "first_name",
+									"type": "String",
+									"physicalType": "varchar"
+								},
+								"sink": {
+									"name": "first_name",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "last_name",
+									"type": "String",
+									"physicalType": "varchar"
+								},
+								"sink": {
+									"name": "last_name",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "email",
+									"type": "String",
+									"physicalType": "varchar"
+								},
+								"sink": {
+									"name": "email",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "phone",
+									"type": "String",
+									"physicalType": "varchar"
+								},
+								"sink": {
+									"name": "phone",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "active",
+									"type": "Byte",
+									"physicalType": "tinyint"
+								},
+								"sink": {
+									"name": "active",
+									"type": "Byte",
+									"physicalType": "INT_32"
+								}
+							},
+							{
+								"source": {
 									"name": "store_id",
 									"type": "Int32",
 									"physicalType": "int"
@@ -66,86 +138,14 @@
 							},
 							{
 								"source": {
-									"name": "store_name",
-									"type": "String",
-									"physicalType": "varchar"
+									"name": "manager_id",
+									"type": "Int32",
+									"physicalType": "int"
 								},
 								"sink": {
-									"name": "store_name",
-									"type": "String",
-									"physicalType": "UTF8"
-								}
-							},
-							{
-								"source": {
-									"name": "phone",
-									"type": "String",
-									"physicalType": "varchar"
-								},
-								"sink": {
-									"name": "phone",
-									"type": "String",
-									"physicalType": "UTF8"
-								}
-							},
-							{
-								"source": {
-									"name": "email",
-									"type": "String",
-									"physicalType": "varchar"
-								},
-								"sink": {
-									"name": "email",
-									"type": "String",
-									"physicalType": "UTF8"
-								}
-							},
-							{
-								"source": {
-									"name": "street",
-									"type": "String",
-									"physicalType": "varchar"
-								},
-								"sink": {
-									"name": "street",
-									"type": "String",
-									"physicalType": "UTF8"
-								}
-							},
-							{
-								"source": {
-									"name": "city",
-									"type": "String",
-									"physicalType": "varchar"
-								},
-								"sink": {
-									"name": "city",
-									"type": "String",
-									"physicalType": "UTF8"
-								}
-							},
-							{
-								"source": {
-									"name": "state",
-									"type": "String",
-									"physicalType": "varchar"
-								},
-								"sink": {
-									"name": "state",
-									"type": "String",
-									"physicalType": "UTF8"
-								}
-							},
-							{
-								"source": {
-									"name": "zip_code",
-									"type": "String",
-									"physicalType": "varchar"
-								},
-								"sink": {
-									"name": "zip_code",
-									"type": "String",
-									"physicalType": "UTF8"
+									"name": "manager_id",
+									"type": "Int32",
+									"physicalType": "INT_32"
 								}
 							},
 							{
@@ -201,7 +201,7 @@
 		"parameters": {
 			"table": {
 				"type": "string",
-				"defaultValue": "staffs"
+				"defaultValue": "orders"
 			},
 			"schema": {
 				"type": "string",
@@ -213,7 +213,7 @@
 			},
 			"filename": {
 				"type": "string",
-				"defaultValue": "sales-staffs.parquets"
+				"defaultValue": "sales-orders.parquets"
 			}
 		},
 		"annotations": []
