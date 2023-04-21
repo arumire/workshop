@@ -18,7 +18,7 @@
 					"source": {
 						"type": "AzureSqlSource",
 						"sqlReaderQuery": {
-							"value": "SELECT TOP (1000) [Id]\n      ,[SourceObjectSettings]\n      ,[CopySourceSettings]\n      ,[SinkObjectSettings]\n      ,[CopySinkSettings]\n      ,[CopyActivitySettings]\n      ,[DataLoadingBehaviorSettings]\n      ,[DataTranslator]\n      ,[TaskId]\n      ,[CopyEnabled]\n  FROM [control_process].[ingest]\n  WHERE [CopyEnabled]-1\n  ORDER BY [TaskId] ASC",
+							"value": "SELECT TOP (1000) [Id]\n      ,[SourceObjectSettings]\n      ,[CopySourceSettings]\n      ,[SinkObjectSettings]\n      ,[CopySinkSettings]\n      ,[CopyActivitySettings]\n      ,[DataLoadingBehaviorSettings]\n      ,[DataTranslator]\n      ,[TaskId]\n      ,[CopyEnabled]\n  FROM [control_process].[ingest]",
 							"type": "Expression"
 						},
 						"queryTimeout": "02:00:00",
