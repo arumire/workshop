@@ -95,7 +95,7 @@
 												"typeProperties": {
 													"variableName": "test_var",
 													"value": {
-														"value": "@item().SourceObjectSettings.table",
+														"value": "@json(item().SourceObjectSettings).table",
 														"type": "Expression"
 													}
 												}
