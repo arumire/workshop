@@ -65,7 +65,14 @@
 									"value": "@item().DataLoadingBehaviorSettings.sourceToSink",
 									"type": "Expression"
 								},
-								"cases": []
+								"cases": [
+									{
+										"value": "FULL_COPY"
+									},
+									{
+										"value": "DELTA_COPY"
+									}
+								]
 							}
 						}
 					]
