@@ -70,16 +70,12 @@
 										"value": "FULLCOPY",
 										"activities": [
 											{
-												"name": "Set variable1",
-												"type": "SetVariable",
+												"name": "FULL COPY SQL TO ADSL",
+												"type": "ExecutePipeline",
 												"dependsOn": [],
 												"userProperties": [],
 												"typeProperties": {
-													"variableName": "test_var",
-													"value": {
-														"value": "@json(item().SourceObjectSettings).table",
-														"type": "Expression"
-													}
+													"waitOnCompletion": true
 												}
 											}
 										]
