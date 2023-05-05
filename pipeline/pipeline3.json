@@ -53,7 +53,22 @@
 						"value": "@activity('Get Metadata Tables').output.valueactivity('Lookup1').output.value",
 						"type": "Expression"
 					},
-					"isSequential": true
+					"isSequential": true,
+					"activities": [
+						{
+							"name": "Switch1",
+							"type": "Switch",
+							"dependsOn": [],
+							"userProperties": [],
+							"typeProperties": {
+								"on": {
+									"value": "@item().DataLoadingBehaviorSettings.sourceToSink",
+									"type": "Expression"
+								},
+								"cases": []
+							}
+						}
+					]
 				}
 			}
 		],
