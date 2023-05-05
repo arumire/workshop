@@ -32,7 +32,8 @@
 							"schema": "control_process",
 							"secret": "conn-sqldb"
 						}
-					}
+					},
+					"firstRowOnly": false
 				}
 			}
 		],
