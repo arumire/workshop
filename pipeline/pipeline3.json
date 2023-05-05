@@ -62,7 +62,7 @@
 							"userProperties": [],
 							"typeProperties": {
 								"on": {
-									"value": "@item().DataLoadingBehaviorSettings.sourceToSink",
+									"value": "@json(item().DataLoadingBehaviorSettings).sourceToSink",
 									"type": "Expression"
 								},
 								"cases": [
