@@ -70,12 +70,22 @@
 										"value": "FULLCOPY",
 										"activities": [
 											{
-												"name": "FULL COPY SQL TO ADSL",
+												"name": "Execute Pipeline1",
 												"type": "ExecutePipeline",
 												"dependsOn": [],
 												"userProperties": [],
 												"typeProperties": {
-													"waitOnCompletion": true
+													"pipeline": {
+														"referenceName": "FULL COPY SQL TO ADSL",
+														"type": "PipelineReference"
+													},
+													"waitOnCompletion": true,
+													"parameters": {
+														"ObjectItem": {
+															"value": "@item()",
+															"type": "Expression"
+														}
+													}
 												}
 											}
 										]
