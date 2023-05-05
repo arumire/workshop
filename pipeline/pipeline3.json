@@ -67,7 +67,22 @@
 								},
 								"cases": [
 									{
-										"value": "FULL_COPY"
+										"value": "FULL_COPY",
+										"activities": [
+											{
+												"name": "Set variable1",
+												"type": "SetVariable",
+												"dependsOn": [],
+												"userProperties": [],
+												"typeProperties": {
+													"variableName": "test_var",
+													"value": {
+														"value": "@item().SourceObjectSettings.table",
+														"type": "Expression"
+													}
+												}
+											}
+										]
 									},
 									{
 										"value": "DELTA_COPY"
@@ -79,6 +94,11 @@
 				}
 			}
 		],
+		"variables": {
+			"test_var": {
+				"type": "String"
+			}
+		},
 		"annotations": []
 	}
 }
