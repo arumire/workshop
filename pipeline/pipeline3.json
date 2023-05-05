@@ -22,7 +22,12 @@
 					},
 					"dataset": {
 						"referenceName": "AzureSqlTable1",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"table": "ingest",
+							"schema": "control_process",
+							"secret": "conn-sqldb"
+						}
 					}
 				}
 			}
