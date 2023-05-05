@@ -67,7 +67,7 @@
 								},
 								"cases": [
 									{
-										"value": "FULL_COPY",
+										"value": "FULLCOPY",
 										"activities": [
 											{
 												"name": "Set variable1",
