@@ -85,7 +85,7 @@
 										]
 									},
 									{
-										"value": "DELTA_COPY",
+										"value": "DELTACOPY",
 										"activities": [
 											{
 												"name": "Set variable1_copy1",
