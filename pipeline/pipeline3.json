@@ -85,7 +85,22 @@
 										]
 									},
 									{
-										"value": "DELTA_COPY"
+										"value": "DELTA_COPY",
+										"activities": [
+											{
+												"name": "Set variable1_copy1",
+												"type": "SetVariable",
+												"dependsOn": [],
+												"userProperties": [],
+												"typeProperties": {
+													"variableName": "test_var",
+													"value": {
+														"value": "@item().SourceObjectSettings.table",
+														"type": "Expression"
+													}
+												}
+											}
+										]
 									}
 								]
 							}
